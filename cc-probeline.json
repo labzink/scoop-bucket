@@ -1,0 +1,15 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/labzink/cc-probeline/releases/download/v0.1.0/cc-probeline_0.1.0_windows_amd64.zip",
+            "bin": [
+                "cc-probeline.exe"
+            ],
+            "hash": "b2a2dd8af9b09b0314591dc608c0b0657c88ec7ccc41887b115b1b79d9db7793"
+        }
+    },
+    "homepage": "https://github.com/labzink/cc-probeline",
+    "license": "MIT",
+    "description": "Status line plugin for Claude Code — model, tokens, cost, subagents"
+}
