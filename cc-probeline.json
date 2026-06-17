@@ -1,12 +1,12 @@
 {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/labzink/cc-probeline/releases/download/v0.1.0/cc-probeline_0.1.0_windows_amd64.zip",
+            "url": "https://github.com/labzink/cc-probeline/releases/download/v0.1.1/cc-probeline_0.1.1_windows_amd64.zip",
             "bin": [
                 "cc-probeline.exe"
             ],
-            "hash": "b2a2dd8af9b09b0314591dc608c0b0657c88ec7ccc41887b115b1b79d9db7793"
+            "hash": "a48c4572d000d844b777298b7fd3695f10a4f9f5ea48d256c2187b5653908779"
         }
     },
     "homepage": "https://github.com/labzink/cc-probeline",
