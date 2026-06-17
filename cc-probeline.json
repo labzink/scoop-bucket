@@ -1,15 +1,20 @@
 {
-    "version": "0.1.2",
+    "version": "0.1.3",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/labzink/cc-probeline/releases/download/v0.1.2/cc-probeline_0.1.2_windows_amd64.zip",
+            "url": "https://github.com/labzink/cc-probeline/releases/download/v0.1.3/cc-probeline_0.1.3_windows_amd64.zip",
             "bin": [
                 "cc-probeline.exe"
             ],
-            "hash": "ed34e093330007b222e553d78edc1d63b19da6f610583424a364385648c224ba"
+            "hash": "86d50dc86b70577d05007cd1c4aa1f516115c340e64948295889bc68fda05955"
         }
     },
     "homepage": "https://github.com/labzink/cc-probeline",
     "license": "MIT",
-    "description": "Status line plugin for Claude Code — model, tokens, cost, subagents"
+    "description": "Status line plugin for Claude Code — model, tokens, cost, subagents",
+    "post_install": [
+        "$stable = Join-Path (Split-Path $dir -Parent) \"current\\cc-probeline.exe\"",
+        "\u0026 \"$dir\\cc-probeline.exe\" install --merge-settings --binary-path $stable --if-absent",
+        "Write-Host \"cc-probeline: restart Claude Code to load the status line.\""
+    ]
 }
